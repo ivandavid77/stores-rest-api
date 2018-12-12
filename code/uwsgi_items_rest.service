@@ -4,7 +4,7 @@ Description=uWSGI items rest
 
 [Service]
 Environment=DATABASE_URL=postgres://bunsan:@localhost:5432/bunsan
-ExecStart=/var/www/html/items-rest/code/.venv/bin/uwsgi --master --emperor /var/www/html/item-rest/code/uwsgi.ini --die-on-term --uid bunsan --gid bunsan --logto /var/www/html/items-rest/log/emperor.log
+ExecStart=/var/www/html/items-rest/code/.venv/bin/uwsgi --master --emperor /var/www/html/items-rest/code/uwsgi.ini --die-on-term --uid bunsan --gid bunsan --logto /var/www/html/items-rest/log/emperor.log
 Restart=always
 KillSignal=SIGQUIT
 Type=notify
